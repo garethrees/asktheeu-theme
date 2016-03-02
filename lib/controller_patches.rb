@@ -19,7 +19,7 @@ Rails.configuration.to_prepare do
                              :has_json => true } ]
 
       begin
-        blog
+        load_blog
       rescue
         @blog_items = []
         @twitter_user = MySociety::Config.get('TWITTER_USERNAME', '')
